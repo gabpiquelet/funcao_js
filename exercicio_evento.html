@@ -1,0 +1,40 @@
+<!--
+Crie uma página que contenha 3 inputs para notas 1, 2 e 3.
+
+Também crie 3 inputs, 1 para a média, 1 para a maior nota e outro para a
+menor nota. Além disso, crie um botão de enviar.
+
+Para o resultado da média, utilize o evento OnSubmit para mostrar o valor,
+o evento OnMouseOver para pintar o campo de vermelho em caso de média
+menor do que 6 e para pintar de verde em caso de média maior ou igual a 6,
+e utilize o evento OnMouseOut para retirar o cor de fundo.
+
+Para o resultado de maior nota utilize o evento OnChange.
+
+Para o resultado de menor nota utilize o evento OnFocus para mostrar a
+nota e OnBlur para ocultar a nota.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Eventos</title>
+</head>
+<body>
+    <input type="number" id="nota1" disbled>
+    <input type="number" id="nota2">
+    <input type="number" id="nota3">
+
+    <input type="number" id="maior" OnChange="maior_nota();">
+    <input type="number" id="menor" onfocus="menor_nota();" onblur="menor_nota();">
+    <input type="number" id="media" onsubmit="calcmedia();" onmouseover="calcmedia();" onmouseout="calcmedia();">
+
+    <button type="submit" id="submit">Calcular</button>
+</body>
+</html>
+
+<script>
+    function calcmedia(){
+        
+    }
+</script>
